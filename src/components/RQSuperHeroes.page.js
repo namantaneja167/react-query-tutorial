@@ -1,6 +1,7 @@
 import { useSuperHeroesData } from "../hooks/useSuperHeroesData";
 
 const RQSuperHeroesPage = () => {
+
     const onSuccess = (data) => {
         console.log('Successful');
     }
@@ -17,7 +18,6 @@ const RQSuperHeroesPage = () => {
     if(isError){
         return <h1>{error}</h1>
     }
-
     return (
         <>
             <h2>RQ Super Heroes Page</h2>
